@@ -1,0 +1,39 @@
+{
+  "scan_timestamp": "2026-03-13T13-12-10Z",
+  "total_findings": 4,
+  "severity_summary": {
+    "HIGH": 1,
+    "MEDIUM": 3,
+    "LOW": 0
+  },
+  "findings": [
+    {
+      "severity": "MEDIUM",
+      "resource_type": "IAM User",
+      "resource_id": "cloud-soc-test-user",
+      "region": "global",
+      "description": "No MFA device associated. Account vulnerable to credential theft."
+    },
+    {
+      "severity": "MEDIUM",
+      "resource_type": "IAM User",
+      "resource_id": "cspm-scanner",
+      "region": "global",
+      "description": "No MFA device associated. Account vulnerable to credential theft."
+    },
+    {
+      "severity": "MEDIUM",
+      "resource_type": "IAM User",
+      "resource_id": "test-user",
+      "region": "global",
+      "description": "No MFA device associated. Account vulnerable to credential theft."
+    },
+    {
+      "severity": "HIGH",
+      "resource_type": "CloudTrail",
+      "resource_id": "N/A",
+      "region": "us-east-1",
+      "description": "No CloudTrail trails found. AWS API activity is not being logged."
+    }
+  ]
+}
